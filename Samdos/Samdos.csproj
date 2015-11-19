@@ -127,6 +127,8 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\indexScript.js" />
+    <Content Include="Scripts\TestimonialModule.js" />
+    <Content Include="Scripts\testimonialScript.js" />
     <Content Include="Styles\indexStyle.css" />
     <Content Include="welcome.html" />
     <None Include="Properties\PublishProfiles\samdos - FTP.pubxml" />
