@@ -131,7 +131,9 @@
     <Content Include="Scripts\testimonialScript.js" />
     <Content Include="Styles\indexStyle.css" />
     <Content Include="welcome.html" />
+    <None Include="Properties\PublishProfiles\samdos - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\samdos - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\samdos - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\samdos - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
