@@ -7,7 +7,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Data.Entity.Migrations;
 using Samdos.Models;
 
-namespace Samdos.Controllers
+namespace Samdos.Models
 {
     public class DataContext : DbContext
     {
