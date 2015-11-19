@@ -118,6 +118,7 @@
     <Content Include="map.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\indexScript.js" />
     <Content Include="Styles\indexStyle.css" />
     <Content Include="welcome.html" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
