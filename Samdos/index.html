@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Samdo's Resturant</title>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles/indexStyle.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/indexScript.js"></script>
+    
+</head>
+<body id="wholeBody">
+    <div class="container-fluid container-no-padding">
+        <div class="row shadow">
+            <div id="headerBar" class="col-md-12">
+                <center>
+                    <img id="logoImage" alt="SAMDOS" src="Img/SamdosLogo.png" />
+                </center>
+
+                <div class="row no-pad">
+                    <div class="col-md-3">
+                        <center>
+                            <button id="button1" type="button" class="btn btn-bar" onmousedown="return button1Pressed()">
+                                HOME
+                            </button>
+                        </center>
+                    </div>
+                    <div class="col-md-3">
+                        <center>
+                            <button id="button2" type="button" class="btn btn-bar" onmousedown="return button2Pressed()">
+                                SPECIALS
+                            </button>
+                        </center>
+                    </div>
+                    <div class="col-md-3">
+                        <center>
+                            <button id="button3" type="button" class="btn btn-bar" onmousedown="return button3Pressed()">
+                                ORDER ONLINE
+                            </button>
+                        </center>
+                    </div>
+
+                    <div class="col-md-3">
+                        <center>
+                            <button id="button4" type="button" class="btn btn-bar" onmousedown="return button4Pressed()">
+                                TESTIMONIALS
+                            </button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="height:100vh; padding-top:30px;" id="iframe">
+                <iframe class="myiFrame" src="welcome.html" width="100%" height="100%" frameborder="0" scrolling="no">Dammit Internet Explorer. Try Chrome or Safari or Firefox or Opera or literally anything but IE.</iframe>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

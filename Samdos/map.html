@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+
+        function initMap() {
+            var myLatLng = { lat: -43.529735, lng: 172.61 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: { lat: -43.530929, lng: 172.636092 },
+                map: map,
+                title: 'Samdo\'s CBD',
+                icon: 'Img/SamdosLogoTiny.png'
+            });
+
+            var marker2 = new google.maps.Marker({
+                position: { lat: -43.530458, lng: 172.598391 },
+                map: map,
+                title: 'Samdo\'s Riccarton',
+                icon: 'Img/SamdosLogoTiny.png'
+            });
+
+            var infowindowCBD = new google.maps.InfoWindow({
+                content: "<h3>Samdo's CBD</h3><p>Cathedral Square<br>Open 8am-9pm<br>PH. 03 3545551</p>"
+            });
+            var infowindowRiccarton = new google.maps.InfoWindow({
+                content: "<h3>Samdo's Riccarton</h3><p>Riccaton Mall<br>Open 8am-9pm<br>PH. 03 3545553</p>"
+            });
+
+            marker.addListener('click', function () {
+                infowindowCBD.open(map, marker);
+            });
+            marker2.addListener('click', function () {
+                infowindowRiccarton.open(map, marker2);
+            });
+
+        }
+
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsGiZeBbLJea5hWBGrhlZzniYvBeclveU&signed_in=true&callback=initMap"></script>
+</body>
+</html>
