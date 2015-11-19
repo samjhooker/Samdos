@@ -112,10 +112,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Img\SamdosLogo.png" />
+    <Content Include="Img\SamdosLogoTiny.png" />
     <Content Include="index.html" />
     <Content Include="map.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Styles\indexStyle.css" />
     <Content Include="welcome.html" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
