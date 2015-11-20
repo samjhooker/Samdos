@@ -2,25 +2,25 @@
 
     return {
         getTestimonials: function (callback) {
-            $.ajax({ 
+            $.ajax({
                 type: "GET",
                 dataType: "json",
                 // API url here
-                url: "http://samdos.azurewebsites.net/api/Testimonials",
-                success: function(data){        
+                url: "http://samdos.azurewebsites.net/api/Testimonials/",
+                success: function (data) {
                     console.log(data);
                     callback(data);
                 }
             });
         },
 
-        getTestimonialById: function (id, callback){
-            
-            $.ajax({ 
+        getTestimonialById: function (id, callback) {
+
+            $.ajax({
                 type: "GET",
                 dataType: "json",
                 url: "http://samdos.azurewebsites.net/api/Testimonials/" + id,
-                success: function(data){        
+                success: function (data) {
                     console.log(data);
                     callback(data);
                 }
@@ -29,39 +29,37 @@
         },
 
         addTestimonial: function (student, callback) {
-             
+
             $.ajax({
                 url: "http://samdos.azurewebsites.net/api/Testimonials/",
                 type: "POST",
-                data : student,
-                success: function(data, textStatus, jqXHR)
-                {
+                data: student,
+                success: function (data, textStatus, jqXHR) {
                     callback();
                 }
             });
 
         },
 
-        updateTestimonial: function (id, obj, callback){
-            
+        updateTestimonial: function (studentid, student, callback) {
+
             $.ajax({
-                url: "http://samdos.azurewebsites.net/api/Testimonials/" + id,
+                url: "http://samdos.azurewebsites.net/api/Testimonials/" + studentid,
                 type: "PUT",
-                data : obj,
-                success: function(data, textStatus, jqXHR)
-                {
+                data: student,
+                success: function (data, textStatus, jqXHR) {
                     callback();
                 }
             });
         },
 
-        deleteTestimonial: function (id, callback) {
-            
-            $.ajax({ 
+        deleteTestimonial: function (studentid, callback) {
+
+            $.ajax({
                 type: "DELETE",
                 dataType: "json",
-                url: "http://samdos.azurewebsites.net/api/Testimonials/" + id,
-                success: function(data){        
+                url: "http://samdos.azurewebsites.net/api/Testimonials/" + studentid,
+                success: function (data) {
                     callback();
                 }
             });

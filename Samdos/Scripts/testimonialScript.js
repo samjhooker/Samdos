@@ -33,12 +33,38 @@ function loadTestimonials() {
                 var password = prompt("Please enter your Samdo's staff password", "");
                 if(password == "admin"){
                     //delete post
-                    TestimonialModule.deleteTestimonial(row.getAttribute("data-id"), function () {
+                    TestimonialModule.deleteTestimonial(row.getAttribute("data-id"), function (data) {
                         window.location.href = "testimonials.html";
                     });
                 }
             };
             staffCol.appendChild(btn);
+
+            var btn2 = document.createElement("BUTTON");        // Create a <button> element
+            var t2 = document.createTextNode("reply");       // Create a text node
+            btn2.appendChild(t2);
+            btn2.onclick = function () {
+                var password = prompt("Please enter your Samdo's staff password", "");
+                if (password == "admin") {
+                    
+                    //get post first
+                    TestimonialModule.getTestimonialById(row.getAttribute("data-id"), function (data) {
+                        var reply = prompt("Please enter your Reply", "");
+                        var newTestamonial = {
+                            ID:data.ID,
+                            Name: data.Name,
+                            Comment: data.Comment,
+                            reply: reply
+                        }
+
+                        TestimonialModule.updateTestimonial(row.getAttribute("data-id"), newTestamonial, function () {
+                            window.location.href = "testimonials.html";
+                        });
+                    });
+                }
+            };
+            staffCol.appendChild(btn2);
+
             row.appendChild(staffCol);
 
 
