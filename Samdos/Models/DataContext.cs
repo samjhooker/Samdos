@@ -9,6 +9,8 @@ using Samdos.Models;
 
 namespace Samdos.Models
 {
+
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class DataContext : DbContext
     {
 
@@ -35,9 +37,9 @@ namespace Samdos.Models
         public DbSet<Testimonial> Testimonials { get; set; }
 
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-        }
+        }*/
     }
 }
