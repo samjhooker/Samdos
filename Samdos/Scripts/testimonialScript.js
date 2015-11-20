@@ -24,6 +24,24 @@ function loadTestimonials() {
             row.setAttribute("data-id", testimonials[i].ID);
 
             // Create columns
+
+            var staffCol = document.createElement('td');
+            var btn = document.createElement("BUTTON");        // Create a <button> element
+            var t = document.createTextNode("delete");       // Create a text node
+            btn.appendChild(t);   
+            btn.onclick = function() {
+                var password = prompt("Please enter your Samdo's staff password", "");
+                if(password == "admin"){
+                    //delete post
+                    TestimonialModule.deleteTestimonial(row.getAttribute("data-id"), function () {
+                        window.location.href = "testimonials.html";
+                    });
+                }
+            };
+            staffCol.appendChild(btn);
+            row.appendChild(staffCol);
+
+
             var nameCol = document.createElement('td');
             nameCol.innerHTML = testimonials[i].Name;
             row.appendChild(nameCol);
@@ -60,11 +78,11 @@ function submitTestimonialButtonPressed() {
             ID: Math.floor((Math.random() * 9999999) + 1),
             Name: name,
             Comment: comment,
-            reply: "<i>no reply for this comment</i>"
+            reply: "-"
         }
 
         TestimonialModule.addTestimonial(newTestamonial, function () {
-            window.location.href = "index.html";
+            window.location.href = "testimonials.html";
         });
 
     }

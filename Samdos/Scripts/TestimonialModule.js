@@ -40,6 +40,31 @@
                 }
             });
 
+        },
+
+        updateTestimonial: function (id, obj, callback){
+            
+            $.ajax({
+                url: "http://samdos.azurewebsites.net/api/Testimonials/" + id,
+                type: "PUT",
+                data : obj,
+                success: function(data, textStatus, jqXHR)
+                {
+                    callback();
+                }
+            });
+        },
+
+        deleteTestimonial: function (id, callback) {
+            
+            $.ajax({ 
+                type: "DELETE",
+                dataType: "json",
+                url: "http://samdos.azurewebsites.net/api/Testimonials/" + id,
+                success: function(data){        
+                    callback();
+                }
+            });
         }
     };
 
