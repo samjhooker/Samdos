@@ -17,6 +17,9 @@ namespace Samdos.Models
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
 
+
+        public System.Data.Entity.DbSet<Testimonial> Testimonials { get; set; }
+
         public class MyConfiguration : DbMigrationsConfiguration<DataContext>
         {
 
@@ -26,17 +29,15 @@ namespace Samdos.Models
             }
         }
 
-        public DataContext()
-            : base("name=DataContext")
-        {
-            if (!Database.Exists("DataContext"))
-            {
-                // Need to initialize database with configuration 
-                Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataContext, MyConfiguration>());
-            }
-        }
+    public DataContext(): base("name=DataContext")
+    {
+       if (!Database.Exists("DataContext"))
+          {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataContext, MyConfiguration>());
+          }
+    }
 
-        public System.Data.Entity.DbSet<Testimonial> Testimonials { get; set; }
+        
 
     }
 }

@@ -14,7 +14,7 @@ function loadTestimonials() {
 
     function setupTestimonials(testimonials) {
 
-        output.log("finished pulling from the server");
+        console.log("finished pulling from the server");
 
         // Loop through list of testimonials
         for (i = 0; i < testimonials.length; i++) {
