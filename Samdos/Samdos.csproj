@@ -136,8 +136,10 @@
     <Content Include="Styles\indexStyle.css" />
     <Content Include="welcome.html" />
     <None Include="Properties\PublishProfiles\samdos - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Samdos - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\samdos - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\samdos - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Samdos - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\samdos - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\SamdosEateries - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\SamdosEateries - Web Deploy.pubxml" />
@@ -145,17 +147,19 @@
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="testimonials.html" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\jquery-2.1.4.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\TestimonialsController.cs" />
-    <Compile Include="Models\DataContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\Testimonial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
