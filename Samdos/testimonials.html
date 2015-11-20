@@ -18,22 +18,37 @@
 
     <div class="container">
         <!--this is out main container that will hold everything, bootstrap will create padding etc-->
+        <div class="row">
+            <div class="paragraph-rounded-box">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="nameTextField" placeholder="Name">
+                </div>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="commentTextField" placeholder="Comment">
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary btn-block">Submit</button>
+                </div>
 
-        <div class="table-responsive">
-            <!--another bootstrap class to make table pretty-->
-            <table class="table table-striped spaced-table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Comments</th>
-                        <th>Reply</th>
-                    </tr>
-                </thead>
-                <tbody id="testimonialsGoHere">
-                    <tr><td>Samuel</td><td>I think it was a rat</td><td>Im glad you enjoyed it</td></td>
-                    <!--Table is dynamically inserted here-->
-                </tbody>
-            </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive">
+                <!--another bootstrap class to make table pretty-->
+                <table class="table table-striped spaced-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Comments</th>
+                            <th>Reply</th>
+                        </tr>
+                    </thead>
+                    <tbody id="testimonialsGoHere">
+                        <tr><td>Samuel</td><td>I think it was a rat</td><td>Im glad you enjoyed it</td></td>
+                        <!--Table is dynamically inserted here-->
+                    </tbody>
+                </table>
+            </div>
         </div>
 
 
