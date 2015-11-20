@@ -94,6 +94,10 @@ button:hover {
     padding-right:20px;
 }
 
+.light-shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 
 /*Written ruby Florian Kutschera.
  https://gist.github.com/gefangenimnetz/3ef3e18364edf105c5af.js 

@@ -41,3 +41,33 @@ function loadTestimonials() {
         }
     }
 }
+
+
+
+
+function submitTestimonialButtonPressed() {
+
+    console.log("submit button pressed");
+
+    var name = document.getElementById("nameTextField").value;
+    var comment = document.getElementById("commentTextField").value;
+
+    if (name == "" || comment == "") {
+        window.alert("Both name and Comment required to proceed");
+    } else {
+        //post that object
+        var newTestamonial = {
+            ID: Math.floor((Math.random() * 9999999) + 1),
+            Name: name,
+            Comment: comment,
+            reply: "<i>no reply for this comment</i>"
+        }
+
+        TestimonialModule.addTestimonial(newTestamonial, function () {
+            window.location.href = "index.html";
+        });
+
+    }
+
+    
+}
