@@ -135,6 +135,8 @@
     <None Include="Properties\PublishProfiles\samdos - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\samdos - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\samdos - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\SamdosEateries - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\SamdosEateries - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
