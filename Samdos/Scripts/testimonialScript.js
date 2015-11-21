@@ -31,6 +31,7 @@ function loadTestimonials() {
             var staffCol = document.createElement('td');
             staffCol.id = row.getAttribute("data-id");
             var btn = document.createElement("BUTTON");        // Create a <button> element
+            btn.className += "hackerButton"
             var t = document.createTextNode("delete");       // Create a text node
             btn.appendChild(t);   
             btn.onclick = function (event) {
@@ -49,6 +50,7 @@ function loadTestimonials() {
             var btn2 = document.createElement("BUTTON");        // Create a <button> element
             var t2 = document.createTextNode("reply");       // Create a text node
             btn2.appendChild(t2);
+            btn2.className += "hackerButton"
             btn2.onclick = function (event) {
 
                 var id = event.target.parentNode.id;

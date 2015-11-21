@@ -10,8 +10,12 @@ body{
     background-color:#ededed;
 }
 .spaced-table>tbody>tr>td{
-    padding: 40px 20px;
+    padding: 20px 10px;
     
+}
+
+.spaced-table{
+    margin-top:20px;
 }
 .btn-bar{
     background-color:#FFA000;
@@ -98,6 +102,14 @@ button:hover {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+.hackerButton{
+    background:white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-width:0px;
+    border-radius:4px;
+    margin-right:5px;
+
+}
 
 /*Written ruby Florian Kutschera.
  https://gist.github.com/gefangenimnetz/3ef3e18364edf105c5af.js 
