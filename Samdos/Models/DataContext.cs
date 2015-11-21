@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Samdos.Models
 {
-   // [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class DataContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
