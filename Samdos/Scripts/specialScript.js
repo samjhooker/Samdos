@@ -71,10 +71,19 @@ function loadTestimonials() {
 
 
 
-function submitTestimonialButtonPressed() {
+function addSpecialButtonPressed() {
 
     console.log("submit button pressed");
 
+    var password = prompt("Please enter your Samdo's staff password", "");
+    if (password == "admin") {
+        window.location.href = "createSpecial.html";
+    }
+
+
+
+
+    /*
     var name = document.getElementById("nameTextField").value;
     var comment = document.getElementById("commentTextField").value;
 
@@ -93,7 +102,7 @@ function submitTestimonialButtonPressed() {
             window.location.href = "testimonials.html";
         });
 
-    }
+    }*/
 
 
 }
