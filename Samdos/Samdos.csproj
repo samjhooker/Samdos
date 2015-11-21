@@ -130,9 +130,12 @@
     <Content Include="map.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\fakeLoader.min.js" />
     <Content Include="Scripts\indexScript.js" />
     <Content Include="Scripts\TestimonialModule.js" />
     <Content Include="Scripts\testimonialScript.js" />
+    <Content Include="specials.html" />
+    <Content Include="Styles\fakeLoader.css" />
     <Content Include="Styles\indexStyle.css" />
     <Content Include="welcome.html" />
     <None Include="Properties\PublishProfiles\samdos - FTP %282%29.pubxml" />

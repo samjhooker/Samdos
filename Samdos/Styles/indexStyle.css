@@ -133,3 +133,41 @@ button:hover {
 }
 
     */
+
+
+.special-grid{
+
+     display: flex; 
+     justify-content: center;           
+     flex-wrap: wrap;         
+    
+}
+
+.special-item{
+    display:flex;
+    width:27%;
+    background-color:white;
+    
+    margin: 1em 0 0 1em; padding: 1em;
+
+    border-radius:4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding-left:20px;
+    padding-right:20px;
+
+
+}
+
+.special-item-content{
+    flex:1;
+}
+
+.special-image{
+    width:100px;
+    height:170px;
+    margin-right:1em;
+    object-fit: cover;
+
+
+}
+
