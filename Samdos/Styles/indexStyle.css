@@ -1,8 +1,24 @@
-﻿body {
+﻿
+@font-face {
+    font-family: DIN;
+    src: url(fonts/DIN.tff);
+}
+
+h3{
+    font-family:DIN;
+}
+
+.btn {
+    background-color:#FF5252;
+    border-color:black;
+    font-family:DIN;
+}
+.btn:hover{
+    background-color:#FF7474;
 }
 
 #headerBar {
-    background-color:#FFA000;
+    background-color:#FFC107;
 
 }
 
@@ -18,23 +34,24 @@ body{
     margin-top:20px;
 }
 .btn-bar{
-    background-color:#FFA000;
+    background-color:#FFC107;
     display: block;
     width:100%;
     
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
-
-    border-right-color:red;
+    border-width:0;
+    border-right-color:black;
     border-right-style:solid;
     border-right-width:1.5px;
     
 }
 
 button:hover {
+    text-emphasis-color:white;
     color:white;
-    background-color:#FF5252;
+    background-color:#FF7474;
 }
 
 .shadow{
@@ -125,6 +142,9 @@ button:hover {
     margin-right:50px;
 
 }
+
+
+
 
 /*Written ruby Florian Kutschera.
  https://gist.github.com/gefangenimnetz/3ef3e18364edf105c5af.js 
