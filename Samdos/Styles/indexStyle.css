@@ -111,6 +111,13 @@ button:hover {
 
 }
 
+.ghostButton{
+    background:white;
+    border-width:0px;
+    border-radius:4px;
+    margin-left:20px;
+}
+
 /*Written ruby Florian Kutschera.
  https://gist.github.com/gefangenimnetz/3ef3e18364edf105c5af.js 
 
@@ -164,7 +171,7 @@ button:hover {
 
 .special-image{
     width:100px;
-    height:170px;
+    height:200px;
     margin-right:1em;
     object-fit: cover;
 

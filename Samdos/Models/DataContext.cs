@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Samdos.Models
 {
-    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+   // [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class DataContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
@@ -19,6 +19,7 @@ namespace Samdos.Models
 
 
         public System.Data.Entity.DbSet<Testimonial> Testimonials { get; set; }
+        public System.Data.Entity.DbSet<Special> Specials { get; set; }
 
         public class MyConfiguration : DbMigrationsConfiguration<DataContext>
         {
