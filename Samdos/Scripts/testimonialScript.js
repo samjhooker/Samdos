@@ -19,21 +19,27 @@ function loadTestimonials() {
         // Loop through list of testimonials
         for (i = 0; i < testimonials.length; i++) {
 
+            
+
             // Create row
             var row = document.createElement('tr');
             row.setAttribute("data-id", testimonials[i].ID);
 
+
             // Create columns
 
             var staffCol = document.createElement('td');
+            staffCol.id = row.getAttribute("data-id");
             var btn = document.createElement("BUTTON");        // Create a <button> element
             var t = document.createTextNode("delete");       // Create a text node
             btn.appendChild(t);   
-            btn.onclick = function() {
+            btn.onclick = function (event) {
+                var id = event.target.parentNode.id;
+                
                 var password = prompt("Please enter your Samdo's staff password", "");
                 if(password == "admin"){
                     //delete post
-                    TestimonialModule.deleteTestimonial(row.getAttribute("data-id"), function () {
+                    TestimonialModule.deleteTestimonial(id, function () {
                         window.location.href = "testimonials.html";
                     });
                 }
@@ -43,13 +49,15 @@ function loadTestimonials() {
             var btn2 = document.createElement("BUTTON");        // Create a <button> element
             var t2 = document.createTextNode("reply");       // Create a text node
             btn2.appendChild(t2);
-            btn2.onclick = function () {
+            btn2.onclick = function (event) {
+
+                var id = event.target.parentNode.id;
                 var password = prompt("Please enter your Samdo's staff password", "");
                 if (password == "admin") {
                     
-                    console.log(row.getAttribute("data-id"));
+                    
                     //get post first
-                    TestimonialModule.getTestimonialById(row.getAttribute("data-id"), function (data) {
+                    TestimonialModule.getTestimonialById(id, function (data) {
                         var reply = prompt("Please enter your Reply", "");
                         var newTestamonial = {
                             ID:data.ID,
@@ -58,13 +66,14 @@ function loadTestimonials() {
                             reply: reply
                         }
 
-                        TestimonialModule.updateTestimonial(row.getAttribute("data-id"), newTestamonial, function (){
+                        TestimonialModule.updateTestimonial(id, newTestamonial, function () {
                             window.location.href = "testimonials.html";
                         });
                     });
                 }
             };
             staffCol.appendChild(btn2);
+
 
             row.appendChild(staffCol);
 
