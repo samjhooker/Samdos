@@ -33,7 +33,7 @@ function loadTestimonials() {
                 var password = prompt("Please enter your Samdo's staff password", "");
                 if(password == "admin"){
                     //delete post
-                    TestimonialModule.deleteTestimonial(row.getAttribute("data-id"), function (data) {
+                    TestimonialModule.deleteTestimonial(row.getAttribute("data-id"), function () {
                         window.location.href = "testimonials.html";
                     });
                 }
@@ -47,6 +47,7 @@ function loadTestimonials() {
                 var password = prompt("Please enter your Samdo's staff password", "");
                 if (password == "admin") {
                     
+                    console.log(row.getAttribute("data-id"));
                     //get post first
                     TestimonialModule.getTestimonialById(row.getAttribute("data-id"), function (data) {
                         var reply = prompt("Please enter your Reply", "");
@@ -57,7 +58,7 @@ function loadTestimonials() {
                             reply: reply
                         }
 
-                        TestimonialModule.updateTestimonial(row.getAttribute("data-id"), newTestamonial, function () {
+                        TestimonialModule.updateTestimonial(row.getAttribute("data-id"), newTestamonial, function (){
                             window.location.href = "testimonials.html";
                         });
                     });
