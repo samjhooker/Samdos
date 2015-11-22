@@ -71,7 +71,18 @@ function submitButtonPressed() {
     }
 
     OrderModule.addOrder(order, function () {
+        console.log("order has been placed");
         window.location.href = "orderPlaced.html";
     });
+
+}
+
+
+function staffButtonPressed() {
+
+    var password = prompt("Enter the Samdo's Staff password", "");
+    if (password == "admin") {
+        window.location.href = "viewOrders.html";
+    }
 
 }

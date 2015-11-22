@@ -145,6 +145,7 @@
     <Content Include="specials.html" />
     <Content Include="Styles\fakeLoader.css" />
     <Content Include="Styles\indexStyle.css" />
+    <Content Include="viewOrders.html" />
     <Content Include="welcome.html" />
     <Content Include="fonts\DIN.ttf" />
     <None Include="Properties\PublishProfiles\samdos - FTP %282%29.pubxml" />
