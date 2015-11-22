@@ -135,6 +135,7 @@
     <Content Include="Scripts\createSpecialScript.js" />
     <Content Include="Scripts\fakeLoader.min.js" />
     <Content Include="Scripts\indexScript.js" />
+    <Content Include="Scripts\OrderModule.js" />
     <Content Include="Scripts\specialScript.js" />
     <Content Include="Scripts\SpecialModule.js" />
     <Content Include="Scripts\TestimonialModule.js" />
@@ -164,12 +165,14 @@
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\SpecialsController.cs" />
     <Compile Include="Controllers\TestimonialsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DataContext.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Special.cs" />
     <Compile Include="Models\Testimonial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

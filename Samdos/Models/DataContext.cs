@@ -20,6 +20,7 @@ namespace Samdos.Models
 
         public System.Data.Entity.DbSet<Testimonial> Testimonials { get; set; }
         public System.Data.Entity.DbSet<Special> Specials { get; set; }
+        public System.Data.Entity.DbSet<Order> Orders { get; set; }
 
         public class MyConfiguration : DbMigrationsConfiguration<DataContext>
         {
