@@ -24,10 +24,21 @@ function loadTestimonials() {
             specialItem.className += "special-item";
 
             //create image for within item
-            var image = document.createElement("img");
-            image.className += "special-image";
-            image.src = specials[i].ImgURL;
-            specialItem.appendChild(image);
+            console.log(specials[i].ImgURL);
+            if (specials[i].ImgURL != "null") {
+                var image = document.createElement("img");
+                image.className += "special-image";
+                image.src = specials[i].ImgURL;
+                specialItem.appendChild(image);
+                
+            } else {
+                //no image then
+                var image = document.createElement("img");
+                image.className += "special-image";
+                image.src = "http://www.alynconsulting.com/wp-content/uploads/2011/03/iStock_Small-chicken-reduced4.jpg";
+                specialItem.appendChild(image);
+            }
+            
 
             //create main body
             var body = document.createElement("div");
@@ -49,7 +60,19 @@ function loadTestimonials() {
             var deleteButton = document.createElement("button");
             deleteButton.className += "ghostButton";
             deleteButton.textContent = "x";
-            deleteButton.onclick = function () { };
+            deleteButton.id = specials[i].ID;
+            deleteButton.onclick = function (event) {
+                console.log("deleteButtonPressed");
+                var id = event.target.id;
+
+                var password = prompt("Please enter your Samdo's staff password", "");
+                if (password == "admin") {
+                    //delete post
+                    SpecialModule.deleteSpecial(id, function () {
+                        window.location.href = "specials.html";
+                    });
+                }
+            };
 
 
 

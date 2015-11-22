@@ -17,10 +17,12 @@ function previewButtonPressed() {
     specialItem.className += "special-item";
 
     //create image for within item
-    var image = document.createElement("img");
-    image.className += "special-image";
-    image.src = image;
-    specialItem.appendChild(image);
+    if (image != "") {
+        var image = document.createElement("img");
+        image.className += "special-image";
+        image.src = image;
+        specialItem.appendChild(image);
+    }
 
     //create main body
     var body = document.createElement("div");
@@ -66,6 +68,9 @@ function submitButtonPressed() {
     if (title == "" || description == "") {
         alert("Title and Description must be filled");
     } else {
+
+        if (image == "") { image = "null";}
+
         var newSpecial = {
             ID: 0,
             Title: title,
