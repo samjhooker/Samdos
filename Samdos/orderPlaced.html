@@ -2,8 +2,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles/indexStyle.css" rel="stylesheet" />
 </head>
 <body>
+    <center>
+    <h3>Thank you, your order has been placed</h3>
+    <p>Pickup from your selected store will be ready in 15-20 minutes.<br>By ordering, you have agreed to pick up this order, failure to do so will lead to blacklisting of your contact</p>
+    </center>
+    <div class="row">
+        <div class="col-lg-4">
+            <button type="button" class="btn btn-primary btn-block light-shadow formMargins" onclick="backButtonPressed()">Place Another Order</button>
+        </div>
+    </div>
+    
+
+    <script>
+
+        function backButtonPressed() {
+            window.location.href = "order.html";
+        }
+
+    </script>
 
 </body>
 </html>

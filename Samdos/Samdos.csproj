@@ -130,6 +130,7 @@
     <Content Include="index.html" />
     <Content Include="map.html" />
     <Content Include="order.html" />
+    <Content Include="orderPlaced.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\createSpecialScript.js" />
