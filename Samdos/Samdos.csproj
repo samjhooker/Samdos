@@ -142,6 +142,7 @@
     <Content Include="Scripts\SpecialModule.js" />
     <Content Include="Scripts\TestimonialModule.js" />
     <Content Include="Scripts\testimonialScript.js" />
+    <Content Include="Scripts\viewOrdersScript.js" />
     <Content Include="specials.html" />
     <Content Include="Styles\fakeLoader.css" />
     <Content Include="Styles\indexStyle.css" />
