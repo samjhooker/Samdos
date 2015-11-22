@@ -7,13 +7,14 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Styles/indexStyle.css" rel="stylesheet" />
+    <script src="Scripts/orderScript.js"></script>
 </head>
 <body>
-    <div class="bootstrap-iso">
+    <div class="bootstrap-iso" id="body">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <form method="post">
+                    <form id="form">
                         <div class="form-group ">
                             <label class="control-label requiredField">
                                 Select a Store
@@ -150,7 +151,7 @@
                         </div>
                         <div class="form-group">
                             <div>
-                                <button class="btn btn-primary " name="submit" type="submit">
+                                <button class="btn btn-primary "  onclick="submitButtonPressed()">
                                     Submit
                                 </button>
                             </div>
@@ -160,5 +161,7 @@
             </div>
         </div>
     </div>
+
+
 </body>
 </html>

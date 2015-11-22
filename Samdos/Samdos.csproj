@@ -136,6 +136,7 @@
     <Content Include="Scripts\fakeLoader.min.js" />
     <Content Include="Scripts\indexScript.js" />
     <Content Include="Scripts\OrderModule.js" />
+    <Content Include="Scripts\orderScript.js" />
     <Content Include="Scripts\specialScript.js" />
     <Content Include="Scripts\SpecialModule.js" />
     <Content Include="Scripts\TestimonialModule.js" />
