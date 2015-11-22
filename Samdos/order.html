@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles/indexStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="bootstrap-iso">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <form method="post">
+                        <div class="form-group ">
+                            <label class="control-label requiredField">
+                                Select a Store
+                                <span class="asteriskField">
+                                    *
+                                </span>
+                            </label>
+                            <div class="">
+                                <div class="radio">
+                                    <label class="radio">
+                                        <input name="radio1" type="radio" value="Samdo's CBD" />
+                                        Samdo's CBD
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="radio">
+                                        <input name="radio1" type="radio" value="Samdo's Riccarton" />
+                                        Samdo's Riccarton
+                                    </label>
+                                </div>
+                                <span class="help-block" id="hint_radio1">
+                                    Select which Samdo's Store to pick up from
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label requiredField" for="nameTextField">
+                                Name
+                                <span class="asteriskField">
+                                    *
+                                </span>
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-child">
+                                    </i>
+                                </div>
+                                <input class="form-control" id="nameTextField" name="nameTextField" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label requiredField" for="phoneTextField">
+                                Phone Number
+                                <span class="asteriskField">
+                                    *
+                                </span>
+                            </label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-phone">
+                                    </i>
+                                </div>
+                                <input class="form-control" id="phoneTextField" name="phoneTextField" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-group" id="div_radio">
+                            <label class="control-label requiredField" for="radio">
+                                Select a Type
+                                <span class="asteriskField">
+                                    *
+                                </span>
+                            </label>
+                            <div class="">
+                                <label class="radio-inline">
+                                    <input name="radio" type="radio" value="Burger" />
+                                    Burger
+                                </label>
+                                <label class="radio-inline">
+                                    <input name="radio" type="radio" value="Wrap" />
+                                    Wrap
+                                </label>
+                                <label class="radio-inline">
+                                    <input name="radio" type="radio" value="Salad" />
+                                    Salad
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group" id="div_checkbox">
+                            <label class="control-label " for="checkbox">
+                                Check all the Ingredients you would like to add to order
+                            </label>
+                            <div class=" ">
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Lettuce" />
+                                    Lettuce
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Tomato" />
+                                    Tomato
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Onion" />
+                                    Onion
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Carrot" />
+                                    Carrot
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Pepper" />
+                                    Pepper
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Cheese" />
+                                    Cheese
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Mushroom" />
+                                    Mushroom
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Extra Chicken ($2)" />
+                                    Extra Chicken ($2)
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Avocado ($2)" />
+                                    Avocado ($2)
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Extra Cheese ($2)" />
+                                    Extra Cheese ($2)
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input name="checkbox" type="checkbox" value="Beans" />
+                                    Beans
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label " for="commentTextField">
+                                Optional Comments/Requirements
+                            </label>
+                            <textarea class="form-control" cols="40" id="commentTextField" name="commentTextField" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <button class="btn btn-primary " name="submit" type="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
